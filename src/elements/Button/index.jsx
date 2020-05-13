@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import propTypes from 'prop-types'
 
+import "./index.scss"
+
 export default function Button(props) {
   const className = [props.className]
   
@@ -76,6 +78,7 @@ Button.propTypes = {
   href : propTypes.string,
   className : propTypes.string,
   isExternal : propTypes.bool,
+  isPrimary : propTypes.bool,
   isDisabled : propTypes.bool,
   isLoading : propTypes.bool,
   isSmall : propTypes.bool,
